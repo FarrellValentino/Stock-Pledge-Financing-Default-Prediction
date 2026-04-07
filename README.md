@@ -1,7 +1,8 @@
 0e06-4fe8-afd1-dddf548f20a4" /># Stock-Pledge-Financing-Default-Prediction
- # 🏦 Stock Pledge Financing Default Prediction: Tree-Models vs Deep Learning
 
- ## 📌 Business Context
+# 🏦 Stock Pledge Financing Default Prediction: Tree-Models vs Deep Learning
+
+## 📌 Business Context
 In the banking and financial sector, predicting corporate client defaults on stock-pledged loans is critical for mitigating Non-Performing Loans (NPL) and maintaining institutional liquidity. 
 
 This project tackles a highly imbalanced financial dataset to predict loan defaults. Rather than relying on a single black-box algorithm, this project presents a rigorous comparative analysis between traditional state-of-the-art tree-based models and modern Deep Learning architectures tailored for tabular data.
@@ -18,7 +19,7 @@ This project tackles a highly imbalanced financial dataset to predict loan defau
 - Deep Learning: PyTorch, pytorch-tabnet
 - Visualization: matplotlib, seaborn
 
- 📊 Model Performance & Evaluation
+## 📊 Model Performance & Evaluation
 
 While all models achieved exceptional AUC scores in local validation, the final selection was strictly based on **Log Loss** to ensure the model outputs reliable probability scores for risk threshold tuning.
 
