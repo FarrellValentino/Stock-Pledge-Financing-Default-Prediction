@@ -1,5 +1,3 @@
-0e06-4fe8-afd1-dddf548f20a4" /># Stock-Pledge-Financing-Default-Prediction
-
 # 🏦 Stock Pledge Financing Default Prediction: Tree-Models vs Deep Learning
 
 ## 📌 Business Context
