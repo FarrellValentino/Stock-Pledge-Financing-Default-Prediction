@@ -1,12 +1,12 @@
-<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/20e76724-0e06-4fe8-afd1-dddf548f20a4" /># Stock-Pledge-Financing-Default-Prediction
- 🏦 Stock Pledge Financing Default Prediction: Tree-Models vs Deep Learning
+0e06-4fe8-afd1-dddf548f20a4" /># Stock-Pledge-Financing-Default-Prediction
+ # 🏦 Stock Pledge Financing Default Prediction: Tree-Models vs Deep Learning
 
- 📌 Business Context
+ ## 📌 Business Context
 In the banking and financial sector, predicting corporate client defaults on stock-pledged loans is critical for mitigating Non-Performing Loans (NPL) and maintaining institutional liquidity. 
 
 This project tackles a highly imbalanced financial dataset to predict loan defaults. Rather than relying on a single black-box algorithm, this project presents a rigorous comparative analysis between traditional state-of-the-art tree-based models and modern Deep Learning architectures tailored for tabular data.
 
- 🚀 Key Highlights & Engineering Rigor
+## 🚀 Key Highlights & Engineering Rigor
 - Algorithm Showdown: Benchmarked LightGBM, XGBoost, and TabNet (Attention-based Deep Learning for Tabular Data) to find the optimal balance between speed, scalability, and predictive power.
 - Enterprise-Grade Reproducibility: Implemented a global seed_everything architecture across PyTorch, NumPy, and Python environments to ensure 100% deterministic and reproducible deep learning results.
 - Business-Centric Evaluation: Transitioned from standard AUC metrics to log loss optimization, prioritizing the *confidence* of probability predictions—a crucial factor for banking risk-scoring systems.
@@ -51,4 +51,10 @@ To run this pipeline locally and reproduce the exact results:
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/](https://github.com/)[Username_Lu]/[Nama_Repo_Lu].git
+   git clone [https://github.com/](https://github.com/)[FarrellValentino]/[Stock Pledge Financing Default Prediction].git
+
+2. Install the required dependecies:
+     pip install -r requirements.txt
+   
+3. Run the notebook 
+   
