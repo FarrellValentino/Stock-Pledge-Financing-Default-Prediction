@@ -12,7 +12,7 @@ This project tackles a highly imbalanced financial dataset to predict loan defau
 - Business-Centric Evaluation: Transitioned from standard AUC metrics to log loss optimization, prioritizing the *confidence* of probability predictions—a crucial factor for banking risk-scoring systems.
 - Robust Preprocessing: Handled extreme financial outliers via median imputation and utilized standardization specifically optimized for Neural Network convergence.
 
- 🧰 Tech Stack
+## 🧰 Tech Stack
 - Data Manipulation: pandas, numpy
 - Machine Learning: scikit-learn, LightGBM, XGBoost
 - Deep Learning: PyTorch, pytorch-tabnet
@@ -54,6 +54,7 @@ To run this pipeline locally and reproduce the exact results:
    git clone [https://github.com/](https://github.com/)[FarrellValentino]/[Stock Pledge Financing Default Prediction].git
 
 2. Install the required dependecies:
+     ```bash
      pip install -r requirements.txt
    
 3. Run the notebook 
