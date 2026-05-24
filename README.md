@@ -7,13 +7,13 @@ This project tackles a highly imbalanced financial dataset to predict loan defau
 
 ## 🚀 Key Highlights & Engineering Rigor
 - Algorithm Showdown: Benchmarked LightGBM, XGBoost, and TabNet (Attention-based Deep Learning for Tabular Data) to find the optimal balance between speed, scalability, and predictive power.
-- Enterprise-Grade Reproducibility: Implemented a global seed_everything architecture across PyTorch, NumPy, and Python environments to ensure 100% deterministic and reproducible deep learning results.
-- Business-Centric Evaluation: Transitioned from standard AUC metrics to log loss optimization, prioritizing the *confidence* of probability predictions—a crucial factor for banking risk-scoring systems.
+- Enterprise Grade Reproducibility: Implemented a global seed_everything architecture across PyTorch, NumPy, and Python environments to ensure 100% deterministic and reproducible deep learning results.
+- Business Centric Evaluation: Transitioned from standard AUC metrics to log loss optimization, prioritizing the confidence of probability predictions—a crucial factor for banking risk-scoring systems.
 - Robust Preprocessing: Handled extreme financial outliers via median imputation and utilized standardization specifically optimized for Neural Network convergence.
 
 ## 🧰 Tech Stack
 - Data Manipulation: pandas, numpy
-- Machine Learning: scikit-learn, LightGBM, XGBoost
+- Machine Learning: scikit learn, LightGBM, XGBoost
 - Deep Learning: PyTorch, pytorch-tabnet
 - Visualization: matplotlib, seaborn
 
