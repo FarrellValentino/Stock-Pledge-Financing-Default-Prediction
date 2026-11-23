@@ -58,8 +58,8 @@ To make the LightGBM predictions actionable for non technical stakeholders, the 
 ### 2. Risk Simulation (Threshold Simulator)
 * **Dynamic Risk Threshold Slicer:** Built using a disconnected Power BI *What-If Parameter* (`0.00` – `1.00`) paired with custom DAX measures (`CALCULATE`, `FILTER`, `SELECTEDVALUE`).
 * **Real-Time Stress Testing:** Moving the threshold slider immediately recalculates the **Simulated Default Count**, **Simulated Default Rate**, and filters the high-risk company watchlist.
-  *At baseline threshold (`0.50`):* Flags **77 companies** (**20.48%** simulated default rate) as High Risk.
-  *Under stricter risk appetite (e.g., `0.30`):* Automatically expands the watchlist to capture borderline companies before default occurs.
+ * *At baseline threshold(`0.50`):* Flags **77 companies** (**20.48%** simulated default rate) as High Risk.
+ * *Under stricter risk appetite (e.g., `0.30`):* Automatically expands the watchlist to capture borderline companies before default occurs.
 
 <img width="1076" height="697" alt="image" src="https://github.com/user-attachments/assets/f540ccf2-6fbb-41cb-b491-10187756f107" />
 
