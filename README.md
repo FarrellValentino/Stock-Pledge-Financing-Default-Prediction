@@ -30,6 +30,7 @@ While all models achieved exceptional AUC scores in local validation, the final 
 
 - **Confusion Matrices:** Demonstrates the models' precision in capturing True Positives (Actual Defaults) vs avoiding False Positives.
 <img width="476" height="321" alt="image" src="https://github.com/user-attachments/assets/ce562dc8-8bd4-439e-81d1-dec0071bc907" />
+<img width="1920" height="1080" alt="Screenshot (399)" src="https://github.com/user-attachments/assets/7e0016ab-881d-4462-8b80-fabad8828e3f" />
 
 <img width="470" height="323" alt="image" src="https://github.com/user-attachments/assets/1a3e2d71-3b61-4256-9fd9-dd3dd12e204d" />
 
@@ -44,7 +45,21 @@ While all models achieved exceptional AUC scores in local validation, the final 
 
   <img width="503" height="322" alt="image" src="https://github.com/user-attachments/assets/c32aab19-606f-49b8-9fa9-7acf357b0df5" />
 
+## 📈 Interactive Power BI Risk Dashboard
 
+To make the LightGBM predictions actionable for non technical stakeholders, the test set probability scores and feature importance weights were integrated into a two<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3c32b1fb-cd61-4af1-9ae0-a6e41110c486" />page Power BI report:
+
+### 1. Overview Page
+* **Portfolio KPI Cards:** Tracks total evaluated companies, baseline default count, and overall portfolio default rate.
+* **Model Explainability:** Visualizes LightGBM feature importance so analysts can see which financial ratios drive default risk the most.
+* **Company Risk Breakdown:** Displays individual stock codes alongside their predicted risk status.
+
+### 2. Risk Simulation (Threshold Simulator)
+* **Dynamic Risk Threshold Slicer:** Built using a disconnected Power BI *What-If Parameter* (`0.00` – `1.00`) paired with custom DAX measures (`CALCULATE`, `FILTER`, `SELECTEDVALUE`).
+* **Real-Time Stress Testing:** Moving the threshold slider immediately recalculates the **Simulated Default Count**, **Simulated Default Rate**, and filters the high-risk company watchlist.
+  * *At baseline threshold (`0.50`):* Flags **77 companies** (**20.48%** simulated default rate) as High Risk.
+  * *Under stricter risk appetite (e.g., `0.30`):* Automatically expands the watchlist to capture borderline companies before default occurs.
+    
 💻 How to Reproduce
 To run this pipeline locally and reproduce the exact results:
 
