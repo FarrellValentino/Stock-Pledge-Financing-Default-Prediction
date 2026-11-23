@@ -30,7 +30,6 @@ While all models achieved exceptional AUC scores in local validation, the final 
 
 - **Confusion Matrices:** Demonstrates the models' precision in capturing True Positives (Actual Defaults) vs avoiding False Positives.
 <img width="476" height="321" alt="image" src="https://github.com/user-attachments/assets/ce562dc8-8bd4-439e-81d1-dec0071bc907" />
-<img width="1920" height="1080" alt="Screenshot (399)" src="https://github.com/user-attachments/assets/7e0016ab-881d-4462-8b80-fabad8828e3f" />
 
 <img width="470" height="323" alt="image" src="https://github.com/user-attachments/assets/1a3e2d71-3b61-4256-9fd9-dd3dd12e204d" />
 
