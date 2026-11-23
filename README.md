@@ -1,4 +1,4 @@
-# 🏦 Stock Pledge Financing Default Prediction: Tree-Models vs Deep Learning
+# 🏦 Stock Pledge Financing Default Prediction & Risk Dashboard
 
 ## 📌 Business Context
 In the banking and financial sector, predicting corporate client defaults on stock-pledged loans is critical for mitigating Non-Performing Loans (NPL) and maintaining institutional liquidity. 
