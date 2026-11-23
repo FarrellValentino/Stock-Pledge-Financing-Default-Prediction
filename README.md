@@ -15,7 +15,7 @@ This project tackles a highly imbalanced financial dataset to predict loan defau
 - Data Manipulation: pandas, numpy
 - Machine Learning: scikit learn, LightGBM, XGBoost
 - Deep Learning: PyTorch, pytorch-tabnet
-- Visualization: matplotlib, seaborn
+- Visualization & BI : matplotlib, seaborn , Power BI, DAX 
 
 ## 📊 Model Performance & Evaluation
 
@@ -47,19 +47,23 @@ While all models achieved exceptional AUC scores in local validation, the final 
 
 ## 📈 Interactive Power BI Risk Dashboard
 
-To make the LightGBM predictions actionable for non technical stakeholders, the test set probability scores and feature importance weights were integrated into a two<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3c32b1fb-cd61-4af1-9ae0-a6e41110c486" />page Power BI report:
+To make the LightGBM predictions actionable for non technical stakeholders, the test set probability scores and feature importance weights were integrated into a two page Power BI report:
 
 ### 1. Overview Page
 * **Portfolio KPI Cards:** Tracks total evaluated companies, baseline default count, and overall portfolio default rate.
 * **Model Explainability:** Visualizes LightGBM feature importance so analysts can see which financial ratios drive default risk the most.
 * **Company Risk Breakdown:** Displays individual stock codes alongside their predicted risk status.
 
+<img width="1422" height="748" alt="image" src="https://github.com/user-attachments/assets/6d35d45d-3d3f-40b2-949c-60430f042eb4" />
+
 ### 2. Risk Simulation (Threshold Simulator)
 * **Dynamic Risk Threshold Slicer:** Built using a disconnected Power BI *What-If Parameter* (`0.00` – `1.00`) paired with custom DAX measures (`CALCULATE`, `FILTER`, `SELECTEDVALUE`).
 * **Real-Time Stress Testing:** Moving the threshold slider immediately recalculates the **Simulated Default Count**, **Simulated Default Rate**, and filters the high-risk company watchlist.
   * *At baseline threshold (`0.50`):* Flags **77 companies** (**20.48%** simulated default rate) as High Risk.
   * *Under stricter risk appetite (e.g., `0.30`):* Automatically expands the watchlist to capture borderline companies before default occurs.
-    
+
+<img width="1076" height="697" alt="image" src="https://github.com/user-attachments/assets/f540ccf2-6fbb-41cb-b491-10187756f107" />
+
 💻 How to Reproduce
 To run this pipeline locally and reproduce the exact results:
 
@@ -72,4 +76,7 @@ To run this pipeline locally and reproduce the exact results:
      pip install -r requirements.txt
    
 3. Run the notebook 
+
+To explore the Power BI Dashboard :
+Download and open `Stock Pledge Financing Risk Dashboard.pbix` using **Microsoft Power BI Desktop** to interact with the `Risk Threshold` slider
    
